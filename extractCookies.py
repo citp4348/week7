@@ -8,8 +8,8 @@ class RequestHandler(BaseHTTPRequestHandler):
         print(parameters)
 
 if __name__ == '__main__':
-    server = HTTPServer(('192.168.1.101', 443), RequestHandler)
+    server = HTTPServer(('192.168.1.101', 80), RequestHandler)
     print('Starting Server')
-    server.socket = ssl.wrap_socket(server.socket, certfile='server.crt', keyfile='server.key', server_side=True)
+    #server.socket = ssl.wrap_socket(server.socket, certfile='server.crt', keyfile='server.key', server_side=True)
     server.serve_forever()
 
